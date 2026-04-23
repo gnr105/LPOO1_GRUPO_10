@@ -56,5 +56,15 @@ namespace Vistas
         {
             this.Close();
         }
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDNI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

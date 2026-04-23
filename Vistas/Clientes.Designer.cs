@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 84);
+            this.label2.Location = new System.Drawing.Point(49, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -75,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 136);
+            this.label4.Location = new System.Drawing.Point(49, 136);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 3;
@@ -105,17 +105,18 @@
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(100, 20);
             this.txtDNI.TabIndex = 6;
+            this.txtDNI.TextChanged += new System.EventHandler(this.txtDNI_TextChanged);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(134, 81);
+            this.txtApellido.Location = new System.Drawing.Point(133, 81);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
             this.txtApellido.TabIndex = 7;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(134, 107);
+            this.txtNombre.Location = new System.Drawing.Point(133, 107);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 8;
@@ -193,7 +194,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label0);
             this.Name = "Clientes";
-            this.Text = "Clientes";
+            this.Text = "x`";
+            this.Load += new System.EventHandler(this.Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

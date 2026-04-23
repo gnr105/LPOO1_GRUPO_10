@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 84);
+            this.label2.Location = new System.Drawing.Point(69, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(69, 128);
+            this.label3.Location = new System.Drawing.Point(69, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 2;
@@ -71,7 +71,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 172);
+            this.label4.Location = new System.Drawing.Point(69, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 3;
@@ -117,21 +117,21 @@
             // 
             // txtCategoriaProd
             // 
-            this.txtCategoriaProd.Location = new System.Drawing.Point(166, 77);
+            this.txtCategoriaProd.Location = new System.Drawing.Point(166, 82);
             this.txtCategoriaProd.Name = "txtCategoriaProd";
             this.txtCategoriaProd.Size = new System.Drawing.Size(185, 20);
             this.txtCategoriaProd.TabIndex = 8;
             // 
             // txtDescripcionProd
             // 
-            this.txtDescripcionProd.Location = new System.Drawing.Point(166, 121);
+            this.txtDescripcionProd.Location = new System.Drawing.Point(166, 123);
             this.txtDescripcionProd.Name = "txtDescripcionProd";
             this.txtDescripcionProd.Size = new System.Drawing.Size(185, 20);
             this.txtDescripcionProd.TabIndex = 9;
             // 
             // txtPrecioProd
             // 
-            this.txtPrecioProd.Location = new System.Drawing.Point(166, 165);
+            this.txtPrecioProd.Location = new System.Drawing.Point(166, 164);
             this.txtPrecioProd.Name = "txtPrecioProd";
             this.txtPrecioProd.Size = new System.Drawing.Size(185, 20);
             this.txtPrecioProd.TabIndex = 10;
@@ -154,6 +154,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Productos";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.Productos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

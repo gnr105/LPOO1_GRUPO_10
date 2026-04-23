@@ -41,10 +41,9 @@
             // 
             // btnAddClient
             // 
-            this.btnAddClient.Location = new System.Drawing.Point(111, 124);
-            this.btnAddClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddClient.Location = new System.Drawing.Point(83, 101);
             this.btnAddClient.Name = "btnAddClient";
-            this.btnAddClient.Size = new System.Drawing.Size(167, 28);
+            this.btnAddClient.Size = new System.Drawing.Size(125, 23);
             this.btnAddClient.TabIndex = 0;
             this.btnAddClient.Text = "Agregar Cliente";
             this.btnAddClient.UseVisualStyleBackColor = true;
@@ -52,10 +51,9 @@
             // 
             // btnAddOS
             // 
-            this.btnAddOS.Location = new System.Drawing.Point(383, 124);
-            this.btnAddOS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddOS.Location = new System.Drawing.Point(287, 101);
             this.btnAddOS.Name = "btnAddOS";
-            this.btnAddOS.Size = new System.Drawing.Size(180, 28);
+            this.btnAddOS.Size = new System.Drawing.Size(125, 23);
             this.btnAddOS.TabIndex = 1;
             this.btnAddOS.Text = "Agregar Obra Social";
             this.btnAddOS.UseVisualStyleBackColor = true;
@@ -63,10 +61,9 @@
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Location = new System.Drawing.Point(111, 214);
-            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddProduct.Location = new System.Drawing.Point(83, 174);
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(167, 28);
+            this.btnAddProduct.Size = new System.Drawing.Size(125, 23);
             this.btnAddProduct.TabIndex = 2;
             this.btnAddProduct.Text = "Agregar Producto";
             this.btnAddProduct.UseVisualStyleBackColor = true;
@@ -74,10 +71,9 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(426, 214);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(287, 174);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(100, 28);
+            this.btnSalir.Size = new System.Drawing.Size(125, 23);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -91,42 +87,40 @@
             this.departamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(659, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(494, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // sistemaToolStripMenuItem
             // 
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.sistemaToolStripMenuItem.Text = "Sistema";
             this.sistemaToolStripMenuItem.Click += new System.EventHandler(this.sistemaToolStripMenuItem_Click);
             // 
             // inquilinoToolStripMenuItem
             // 
             this.inquilinoToolStripMenuItem.Name = "inquilinoToolStripMenuItem";
-            this.inquilinoToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.inquilinoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.inquilinoToolStripMenuItem.Text = "Inquilino";
             // 
             // departamentoToolStripMenuItem
             // 
             this.departamentoToolStripMenuItem.Name = "departamentoToolStripMenuItem";
-            this.departamentoToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.departamentoToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.departamentoToolStripMenuItem.Text = "Departamento";
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 386);
+            this.ClientSize = new System.Drawing.Size(494, 314);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.btnAddOS);
             this.Controls.Add(this.btnAddClient);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Principal";
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
