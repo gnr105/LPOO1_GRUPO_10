@@ -43,17 +43,23 @@ namespace Vistas
             string user = txtUsuario.Text;
             string pass = txtContraseña.Text;
 
-            var usuarioValido = listUsuarios.Find(u => u.Usu_NombreUsuario == user && u.Usu_Contrasenia == pass);
+            var usuarioValido = listUsuarios.Find(u => u.Usu_NombreUsuario.Equals(user) && u.Usu_Contrasenia.Equals(pass));
 
             if (usuarioValido != null)
             {
                 Principal frmPrincipal = new Principal();
-                frmPrincipal.Show();
                 this.Hide();
+                frmPrincipal.ShowDialog(this);
+                txtContraseña.Clear();
+                txtUsuario.Clear();
+                this.Show();
+
             }
             else
             {
                 MessageBox.Show("Usuario o Contraseña Incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtContraseña.Clear();
+                txtUsuario.Clear();
             }
 
 
@@ -69,11 +75,16 @@ namespace Vistas
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             var ee = MessageBox.Show("Desea Salir?", "Atencion", MessageBoxButtons.OKCancel);
-            if (ee == DialogResult.Yes)
+            if (ee.Equals(DialogResult.OK))
             {
                 Application.Exit();
             }
         
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

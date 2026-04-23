@@ -38,5 +38,24 @@ namespace Vistas
             ObrasSociales frmObraSocial = new ObrasSociales();
             frmObraSocial.Show();
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            var ee = MessageBox.Show("Desea salir del menu principal?", "Atencion", MessageBoxButtons.OKCancel);
+            
+            if (ee.Equals(DialogResult.OK))
+            {
+                this.Close();
+                
+            }
+            
+            
+            
+        }
     }
 }
