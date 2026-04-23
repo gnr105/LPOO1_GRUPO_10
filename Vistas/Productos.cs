@@ -69,5 +69,10 @@ namespace Vistas
             btnGuardar.Font = new Font(btnGuardar.Font, FontStyle.Regular);
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

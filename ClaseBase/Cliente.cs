@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ClaseBase
 {
-    class Cliente
+    public class Cliente
     {
         public string Cli_DNI { get; set; }
 
@@ -18,5 +18,17 @@ namespace ClaseBase
         public string OS_CUIT { get; set; }
 
         public string Cli_NroCarnet { get; set; }
+
+        public Cliente() { }
+
+        public Cliente(string dni, string apellido, string nombre, string direccion, string cuit, string carnet)
+        {
+            Cli_DNI = dni;
+            Cli_Apellido = apellido;
+            Cli_Nombre = nombre;
+            Direccion = direccion;
+            OS_CUIT = cuit;
+            Cli_NroCarnet = carnet;
+        }
     }
 }

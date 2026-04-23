@@ -11,7 +11,7 @@ namespace ClaseBase
 
         public string Usu_NombreUsuario { get; set; }
 
-        public string Usu_Contraseña { get; set; }
+        public string Usu_Contrasenia { get; set; }
 
         public string Usu_ApellidoNombre { get; set; }
 
@@ -21,7 +21,7 @@ namespace ClaseBase
         {
             Usu_ID = id;
             Usu_NombreUsuario = usuario;
-            Usu_Contraseña = pass;
+            Usu_Contrasenia = pass;
             Usu_ApellidoNombre = apellido;
             Rol_Codigo = rol;
         }

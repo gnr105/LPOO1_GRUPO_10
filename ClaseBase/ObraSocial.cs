@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ClaseBase
 {
-    class ObraSocial
+    public class ObraSocial
     {
         public string OS_CUIT { get; set; }
 
@@ -14,5 +14,15 @@ namespace ClaseBase
         public string OS_Direccion { get; set; }
 
         public string OS_Telefono { get; set; }
+
+        public ObraSocial() { }
+
+        public ObraSocial(string cuit, string razonsoc, string dire, string telefono)
+        {
+            OS_CUIT = cuit;
+            OS_RazonSocial = razonsoc;
+            OS_Direccion = dire;
+            OS_Telefono = telefono;
+        }
     }
 }

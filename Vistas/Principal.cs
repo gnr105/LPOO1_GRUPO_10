@@ -20,5 +20,23 @@ namespace Vistas
         {
             //Hacer lo mismo que el boton aceptar para redirigir al formulario Sistema
         }
+
+        private void btnAddClient_Click(object sender, EventArgs e)
+        {
+            Clientes frmCliente = new Clientes();
+            frmCliente.Show();
+        }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            Productos frmProductos = new Productos();
+            frmProductos.Show();
+        }
+
+        private void btnAddOS_Click(object sender, EventArgs e)
+        {
+            ObrasSociales frmObraSocial = new ObrasSociales();
+            frmObraSocial.Show();
+        }
     }
 }

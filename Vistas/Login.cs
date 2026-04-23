@@ -43,7 +43,7 @@ namespace Vistas
             string user = txtUsuario.Text;
             string pass = txtContraseña.Text;
 
-            var usuarioValido = listUsuarios.Find(u => u.Usu_NombreUsuario == user && u.Usu_Contraseña == pass);
+            var usuarioValido = listUsuarios.Find(u => u.Usu_NombreUsuario == user && u.Usu_Contrasenia == pass);
 
             if (usuarioValido != null)
             {

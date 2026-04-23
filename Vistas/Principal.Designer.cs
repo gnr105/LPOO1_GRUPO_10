@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAddClient = new System.Windows.Forms.Button();
+            this.btnAddOS = new System.Windows.Forms.Button();
+            this.btnAddProduct = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,32 +39,35 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAddClient
             // 
-            this.button1.Location = new System.Drawing.Point(118, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddClient.Location = new System.Drawing.Point(96, 62);
+            this.btnAddClient.Name = "btnAddClient";
+            this.btnAddClient.Size = new System.Drawing.Size(125, 23);
+            this.btnAddClient.TabIndex = 0;
+            this.btnAddClient.Text = "Agregar Cliente";
+            this.btnAddClient.UseVisualStyleBackColor = true;
+            this.btnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
             // 
-            // button2
+            // btnAddOS
             // 
-            this.button2.Location = new System.Drawing.Point(330, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddOS.Location = new System.Drawing.Point(298, 62);
+            this.btnAddOS.Name = "btnAddOS";
+            this.btnAddOS.Size = new System.Drawing.Size(135, 23);
+            this.btnAddOS.TabIndex = 1;
+            this.btnAddOS.Text = "Agregar Obra Social";
+            this.btnAddOS.UseVisualStyleBackColor = true;
+            this.btnAddOS.Click += new System.EventHandler(this.btnAddOS_Click);
             // 
-            // button3
+            // btnAddProduct
             // 
-            this.button3.Location = new System.Drawing.Point(118, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Location = new System.Drawing.Point(96, 135);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(125, 23);
+            this.btnAddProduct.TabIndex = 2;
+            this.btnAddProduct.Text = "Agregar Producto";
+            this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // button4
             // 
@@ -112,9 +115,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 314);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddProduct);
+            this.Controls.Add(this.btnAddOS);
+            this.Controls.Add(this.btnAddClient);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Principal";
@@ -128,9 +131,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAddClient;
+        private System.Windows.Forms.Button btnAddOS;
+        private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
