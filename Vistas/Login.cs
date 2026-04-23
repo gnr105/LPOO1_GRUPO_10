@@ -87,5 +87,38 @@ namespace Vistas
 
         }
 
+        private void btnCancelar_MouseHover(object sender, EventArgs e)
+        {
+            btnCancelar.BackColor = Color.PaleVioletRed;
+            btnCancelar.ForeColor = Color.White;
+            btnCancelar.FlatStyle = FlatStyle.Popup;
+            btnCancelar.Font = new Font(btnCancelar.Font, FontStyle.Bold);
+        }
+
+        private void btnCancelar_MouseLeave(object sender, EventArgs e)
+        {
+            btnCancelar.BackColor = Color.White;
+            btnCancelar.ForeColor = Color.Black;
+            btnCancelar.FlatStyle = FlatStyle.Standard;
+            btnCancelar.Font = new Font(btnCancelar.Font, FontStyle.Regular);
+        }
+
+        private void btnIngresar_MouseHover(object sender, EventArgs e)
+        {
+            btnIngresar.BackColor = Color.MediumSeaGreen;
+            btnIngresar.ForeColor = Color.White;
+            btnIngresar.FlatStyle = FlatStyle.Popup;
+            btnIngresar.Font = new Font(btnIngresar.Font, FontStyle.Bold);
+        }
+
+        private void btnIngresar_MouseLeave(object sender, EventArgs e)
+        {
+            btnIngresar.BackColor = Color.White;
+            btnIngresar.ForeColor = Color.Black;
+            btnIngresar.FlatStyle = FlatStyle.Standard;
+            btnIngresar.Font = new Font(btnIngresar.Font, FontStyle.Regular);
+        }
+        
+
     }
 }
