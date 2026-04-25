@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ClaseBase;
+using ClaseBase.Repositorio;
 
 namespace Vistas
 {
     public partial class Login : Form
     {
-        List<Usuario> listUsuarios = new List<Usuario>();
-        List<Rol> listRol = new List<Rol>();
+        //List<Usuario> listUsuarios = new List<Usuario>();
+        //List<Rol> listRol = new List<Rol>();
         //Rol oRol = new Rol(1, "Administrador");
         //Rol oRol = new Rol(2, "Operador");
         //Rol oRol = new Rol(3, "Auditor");
@@ -21,20 +22,8 @@ namespace Vistas
         public Login()
         {
             InitializeComponent();
-            CargarDatosIniciales();
-
-        }
-
-        private void CargarDatosIniciales()
-        {
-            listRol.Add(new Rol(1, "Administrador"));
-            listRol.Add(new Rol(2, "Operador"));
-            listRol.Add(new Rol(3, "Auditor"));
-
-            listUsuarios.Add(new Usuario(1, "Test", "123", "Rodriguez", 1));
-            listUsuarios.Add(new Usuario(2, "Marcos", "444", "Valdez", 2));
-            listUsuarios.Add(new Usuario(3, "Agustin", "555", "Callata", 3));
-
+            RolService.CargarRoles();
+            UsuarioService.CargarUsuarios();
 
         }
 
@@ -43,7 +32,7 @@ namespace Vistas
             string user = txtUsuario.Text;
             string pass = txtContraseña.Text;
 
-            var usuarioValido = listUsuarios.Find(u => u.Usu_NombreUsuario.Equals(user) && u.Usu_Contrasenia.Equals(pass));
+            var usuarioValido = UsuarioService.ValidarUsuario(user, pass);
 
             if (usuarioValido != null)
             {
