@@ -75,7 +75,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(125, 23);
             this.btnSalir.TabIndex = 3;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "Cerrar sesión";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 

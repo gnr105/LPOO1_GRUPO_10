@@ -22,5 +22,9 @@ namespace ClaseBase.Repositorio
         {
             return listRol;
         }
+        public static Rol ObtenerRolPorCodigo(int codigo)
+        {
+            return listRol.Find(r => r.Rol_Codigo == codigo);
+        }
     }
 }

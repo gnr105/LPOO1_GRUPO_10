@@ -36,7 +36,9 @@ namespace Vistas
 
             if (usuarioValido != null)
             {
-                Principal frmPrincipal = new Principal();
+                MessageBox.Show("Bienvenido " + usuarioValido.Usu_ApellidoNombre, "Ingreso exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Principal frmPrincipal = new Principal(usuarioValido);
                 this.Hide();
                 frmPrincipal.ShowDialog(this);
                 txtContraseña.Clear();

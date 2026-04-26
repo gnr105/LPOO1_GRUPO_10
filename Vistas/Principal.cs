@@ -6,14 +6,18 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using ClaseBase;
+using ClaseBase.Repositorio;
 
 namespace Vistas
 {
     public partial class Principal : Form
     {
-        public Principal()
+        private Usuario usuarioLogueado;
+        public Principal(Usuario usuario )
         {
             InitializeComponent();
+            usuarioLogueado = usuario; 
         }
 
         private void sistemaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,12 +45,22 @@ namespace Vistas
 
         private void Principal_Load(object sender, EventArgs e)
         {
+            Rol rolUsuario = RolService.ObtenerRolPorCodigo(usuarioLogueado.Rol_Codigo);
+
+            if (rolUsuario != null)
+            {
+                this.Text = "Principal - Usuario: " + usuarioLogueado.Usu_ApellidoNombre + " - Rol: " + rolUsuario.Rol_Descripcion;
+            }
+            else
+            {
+                this.Text = "Principal - Usuario: " + usuarioLogueado.Usu_ApellidoNombre;
+            }
 
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            var ee = MessageBox.Show("Desea salir del menu principal?", "Atencion", MessageBoxButtons.OKCancel);
+            var ee = MessageBox.Show("Desea cerrar sesión?", "Atencion", MessageBoxButtons.OKCancel);
             
             if (ee.Equals(DialogResult.OK))
             {
